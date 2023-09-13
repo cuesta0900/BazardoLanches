@@ -1,0 +1,25 @@
+<section class="cardapio">
+    <div *ngFor="let lanche of lanches" class="lanche">
+        <h2>{{lanche.nome}}</h2>
+        <img src="{{lanche.foto}}" class="foto-lanche"/>
+        <p class="ingredientes">
+            {{lanche.descricao}}
+        </p>
+        <h3 class="preco">
+            {{lanche.preco}}
+        </h3>
+    </div>
+</section><br>
+<section class="cardapio">
+    <div *ngFor="let lanche2 of lanches2" class="lanche">
+        <h2>{{lanche2.nome}}</h2>
+        <img src="{{lanche2.foto}}" class="foto-lanche"/>
+        <p class="ingredientes">
+            {{lanche2.descricao}}
+        </p>
+        <h3 class="preco">
+            {{lanche2.preco}}
+        </h3>
+    </div>
+</section>
+<br>

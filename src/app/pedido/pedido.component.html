@@ -1,0 +1,10 @@
+<h2>Monte seu Pedido</h2>
+<section class="dropdown">
+    <select [(ngModel)]="select_lanche" (change)="onChange()" class="dropbtn">
+        <option *ngFor="let lanche of lanches" [value]="lanche.id" class="dropdown-content">
+            {{lanche.nome_lanche}}
+        </option>
+    </select>
+    <button class="botao"(click)="clickButton()">Adicionar ao Pedido</button>
+
+</section>
