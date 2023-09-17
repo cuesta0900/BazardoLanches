@@ -49,7 +49,7 @@ export class LanchesComponent implements OnInit{
       nome: 'Burger Picante Fire',
       descricao: 'Se você gosta de um toque picante, não pode perder o nosso Burger Picante Fire. Com carne de hambúrguer picante, jalapeños picantes, pimenta pepperoncini e cebola roxa, este hambúrguer é para os corajosos. O queijo pepper jack derretido adiciona um toque de cremosidade, enquanto nosso molho picante é a explosão final de sabor.',
       foto: "../../assets/fuego.png",
-      preco: "R$40,00",
+      preco: "R$45,00",
     },
   ]
 

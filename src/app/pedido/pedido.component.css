@@ -4,14 +4,30 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+.texto-pedido{
+  text-align: center;
+}
+
+.seu-pedido{
+  margin-left: 35px;
+}
+
+p{
+  font-size: 20px;
 }
 
 /* Estilos para o botão do dropdown */
 .dropdown {
     text-align: center; /* Centraliza horizontalmente */
   }
-  
+
   .dropbtn {
     background-color: #333;
     padding: 10px 20px;
@@ -23,7 +39,7 @@
     width: 300px;
     height: 40px;
   }
-  
+
   /* Estilos para o conteúdo do dropdown */
   .dropdown-content {
     font-size: 15px;
@@ -33,19 +49,19 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
+
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-  
+
   /* Estilo quando o mouse passa por cima de uma opção */
   .dropdown-content a:hover {
     background-color: #ddd;
   }
-  
+
   /* Mostrar o dropdown quando o botão é clicado (usando JavaScript) */
   .dropdown:hover .dropdown-content {
     display: block;
@@ -64,23 +80,34 @@
     text-decoration: none; /* Remover sublinhado de link (caso seja um link) */
     display: inline-block; /* Torna o botão um elemento de bloco em linha */
     transition: background-color 0.3s ease; /* Efeito de transição de cor de fundo */
+    margin-left: 40px;
+    margin-bottom: 30px;
   }
-  
+
   /* Estilo quando o mouse passa por cima do botão */
   .botao:hover {
     background-color: #555; /* Cor de fundo quando o mouse passa por cima */
   }
-  
+
   /* Estilo quando o botão está desativado (opcional) */
   .botao:disabled {
     background-color: #999;
     cursor: not-allowed;
   }
-  
+
   /* Estilo para botão de foco (opcional) */
   .botao:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   }
-  
-  
+
+  .container {
+    text-align: center;
+    display: flex;
+  }
+
+  label{
+    margin: 0 auto;
+    display: block;
+    font-size: 30px;
+  }
