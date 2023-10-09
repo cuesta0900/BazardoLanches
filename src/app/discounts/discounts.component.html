@@ -1,0 +1,8 @@
+<div class="discount-container">
+  <div *ngFor="let discount of discounts" class="discount-item">
+      <img [src]="discount.image" alt="{{ discount.name }}">
+      <h2>{{ discount.name }}</h2>
+      <p><strong>Desconto:</strong> {{ discount.value }}</p>
+      <p><strong>Descrição:</strong> {{ discount.description }}</p>
+  </div>
+</div>

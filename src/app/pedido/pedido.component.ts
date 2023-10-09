@@ -1,5 +1,5 @@
+import { formatNumber } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
-
 @Component({
   selector: 'app-pedido',
   templateUrl: './pedido.component.html',
@@ -20,17 +20,17 @@ export class PedidoComponent implements OnInit {
     {
       id: 0,
       nome_lanche: 'Hambúrguer Supremo',
-      preco: 30.00,
+      preco: 20.00,
     },
     {
       id: 1,
       nome_lanche: 'Frango Gourmet',
-      preco: 35.00,
+      preco: 30.00,
     },
     {
       id: 2,
       nome_lanche: 'Burger Veggie Delícia',
-      preco: 40.00,
+      preco: 29.75,
     },
     {
       id: 3,
@@ -40,12 +40,12 @@ export class PedidoComponent implements OnInit {
     {
       id: 4,
       nome_lanche: 'Burger Bacon Bliss',
-      preco: 45.00,
+      preco: 40.00,
     },
     {
       id: 5,
-      nome_lanche: 'Burger Picante Fire',
-      preco: 20.00,
+      nome_lanche: 'Horror Burguer',
+      preco: 40.50,
     },
     {
       id: 6,
@@ -112,9 +112,10 @@ export class PedidoComponent implements OnInit {
     this.total = 0;
   }
 
+
   concluirPedido() {
     if (this.items.length > 0) {
-      alert("Pedido enviado no valor de R$" + this.total + ",00! A entrega ocorrerá entre 40 a 60 minutos!");
+      alert("Pedido enviado no valor de R$" + this.total.toFixed(2) + "! A entrega ocorrerá entre 40 a 60 minutos!");
       this.removeItens();
     } else {
       alert("Insira ao menos um lanche para prosseguir");
