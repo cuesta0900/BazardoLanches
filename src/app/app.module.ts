@@ -9,12 +9,19 @@ import { PedidoComponent } from './pedido/pedido.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Routes, RouterModule } from '@angular/router';
 import { DiscountsComponent } from './discounts/discounts.component';
-
+import { ContatoComponent } from './contato/contato.component';
+import { UnidadesComponent } from './unidades/unidades.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ConectaComponent } from './conecta/conecta.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/lanches', pathMatch: 'full' },
   {path: 'pedido', component: PedidoComponent},
   {path: 'lanches', component: LanchesComponent},
   {path: 'cabecalho', component: CabecalhoComponent},
+  {path: 'contato', component: ContatoComponent},
+  {path: 'unidade', component: UnidadesComponent},
+  {path: 'login', component: ConectaComponent},
 ]
 
 @NgModule({
@@ -23,14 +30,17 @@ const routes: Routes = [
     CabecalhoComponent,
     LanchesComponent,
     PedidoComponent,
-    DiscountsComponent
+    DiscountsComponent,
+    ContatoComponent,
+    UnidadesComponent,
+    ConectaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    [RouterModule.forChild(routes)],
+    [RouterModule.forChild(routes)], HttpClientModule,
   ],
   exports:[
     RouterModule,

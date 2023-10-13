@@ -1,0 +1,26 @@
+<br>
+<div class="login-container">
+  <h2>Login</h2>
+  <p>
+    Use um dos emails cadastrados para logar via API e insira uma senha.
+  </p>
+    <label>Email:
+      <input [(ngModel)]="vItemEmail" />
+    </label>
+
+    <label>Senha:
+    <input [(ngModel)]="vItemPassword" type="password"/>
+    </label>
+
+    <button (click)="chamadaBack()">Emails Cadastrados</button>
+    <ul *ngFor="let result of val" >
+      <li>{{result.email}}</li>
+  </ul>
+
+  <div class="cadastro-link">
+    <button (click)="chamadaBackPost()">Login</button>
+  </div>
+  <ul *ngIf="(clientResult)">
+    <li>{{clientResult.email}} - {{clientResult.password}} </li>
+</ul>
+</div>

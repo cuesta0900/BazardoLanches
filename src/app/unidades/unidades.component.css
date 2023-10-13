@@ -1,0 +1,16 @@
+.centertitle{
+  text-align: center;
+}
+.map{
+  padding: 3em 0;
+}
+
+.mapa{
+  width: 940px;
+  margin: 0 auto;
+}
+
+.map p{
+  margin: 0 0 2em;
+  text-align: center;
+}

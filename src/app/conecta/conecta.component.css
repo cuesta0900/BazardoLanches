@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px; /* Largura da caixa */
+  margin: auto; /* Isso centralizará a caixa horizontalmente */
+}
+
+form {
+  margin-top: 20px;
+}
+
+label,
+input {
+  display: block;
+  margin-bottom: 20px;
+  width: calc(100% - 40px); /* Largura do campo - margens */
+  margin-left: 20px; /* Margem esquerda para centralizar o campo */
+}
+
+button {
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.cadastro-link {
+  margin-top: 20px;
+}
+
+li{
+  list-style-type: none;
+}
